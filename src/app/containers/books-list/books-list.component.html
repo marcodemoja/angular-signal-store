@@ -1,0 +1,8 @@
+@if(!booksLoaded()){
+  loading ...
+} @else {
+  @for(book of books(); track book.id) {
+    <div>{{book.name}}</div>
+   }
+}
+
